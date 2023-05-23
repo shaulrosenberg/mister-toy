@@ -36,6 +36,7 @@ app.use(express.json()) // for req.body
 
 /******************************* label API ************************************/
 
+
 app.get('/api/label', (req, res) => {
     // TODO: get sortBy too
     labelService.query()
@@ -140,15 +141,15 @@ app.delete('/api/toy/:toyId', (req, res) => {
         })
 })
 
-
+app.get('/**', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+})
 
 
 // Listen will always be the last line in our server!
 const port = process.env.PORT || 3030;
 
-app.get('/**', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-})
+
 
 app.listen(port, () => {
     console.log(`App listening on port ${port}!`)
