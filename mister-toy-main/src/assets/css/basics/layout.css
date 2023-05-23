@@ -1,0 +1,32 @@
+/* main.css */
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+.main-layout.app {
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.main-layout>* {
+    grid-column: 1;
+}
+
+.main-layout .full {
+    grid-column: 1/-1;
+}
+
+
+@media (min-width: 768px) {
+    .main-layout {
+        grid-template-columns: 1fr 1200px 1fr;
+    }
+
+    .main-layout>* {
+        grid-column: 2;
+    }
+
+   
+}

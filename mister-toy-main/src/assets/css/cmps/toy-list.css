@@ -1,0 +1,40 @@
+.toy-list {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toy-preview {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+
+.toy-preview button {
+    display: block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #f2f2f2;
+    color: #333;
+    border: none;
+    font-size: 0.875rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.toy-preview button:hover {
+    background-color: #ddd;
+}
+
+
+@media (max-width: 767px) {
+    .toy-list {
+        grid-template-columns: 1fr;
+    }
+
+}

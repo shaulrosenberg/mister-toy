@@ -1,0 +1,83 @@
+[
+  {
+    "_id": "t101",
+    "name": "Not Talking Doll",
+    "price": 1230,
+    "labels": [
+      "Doll",
+      "Battery Powered",
+      "On wheels",
+      "Box game",
+      "Art",
+      "Baby",
+      "Puzzle",
+      "Outdoor"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": true
+  },
+  {
+    "_id": "t102",
+    "name": "Talking Oshri",
+    "price": 200,
+    "labels": [
+      "Doll",
+      "Battery Powered",
+      "Baby"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": true
+  },
+  {
+    "_id": "t103",
+    "name": "Talking Hemos",
+    "price": 199,
+    "labels": [
+      "Doll",
+      "Battery Powered",
+      "Baby"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": true
+  },
+  {
+    "_id": "t104",
+    "name": "Talking Puki",
+    "price": 90,
+    "labels": [
+      "Doll",
+      "Battery Powered",
+      "Baby"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": true
+  },
+  {
+    "_id": "t105",
+    "name": "Talking Muki",
+    "price": 150,
+    "labels": [
+      "Doll",
+      "Battery Powered",
+      "Baby"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": true
+  },
+  {
+    "name": "Figsy",
+    "price": 255,
+    "inStock": true,
+    "labels": [],
+    "createdAt": 1684777593452,
+    "_id": "fL664"
+  },
+  {
+    "name": "Elon",
+    "price": 20,
+    "inStock": true,
+    "labels": [],
+    "createdAt": 1684820738973,
+    "_id": "7E6Rb"
+  }
+]

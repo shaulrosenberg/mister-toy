@@ -1,0 +1,53 @@
+
+.toy-edit {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.toy-edit h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.toy-edit form {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+}
+
+.toy-edit label {
+    font-size: 1rem;
+}
+
+.toy-edit input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.toy-edit input[type="number"] {
+    width: 80px;
+}
+
+.toy-edit button {
+    padding: 0.5rem 1rem;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.toy-edit button:hover {
+    background-color: #1976d2;
+}
+
+.toy-edit .button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toy-edit .button-group>* {
+    margin-right: 0.5rem;
+}

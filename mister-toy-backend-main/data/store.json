@@ -1,0 +1,42 @@
+[
+    {
+        "_id": "s101",
+        "name": "Hadera",
+        "coordinates": {
+            "lat": 32.437408,
+            "lng": 34.925621
+        }
+    },
+    {
+        "_id": "s102",
+        "name": "Haifa",
+        "coordinates": {
+            "lat": 32.794044,
+            "lng": 34.989571
+        }
+    },
+    {
+        "_id": "s103",
+        "name": "Tel-Aviv",
+        "coordinates": {
+            "lat": 32.085300,
+            "lng": 34.781769
+        }
+    },
+    {
+        "_id": "s104",
+        "name": "Rishon",
+        "coordinates": {
+            "lat": 31.961020,
+            "lng": 34.801620
+        }
+    },
+    {
+        "_id": "s105",
+        "name": "Eilat",
+        "coordinates": {
+            "lat": 29.550360,
+            "lng": 34.952278
+        }
+    }
+]

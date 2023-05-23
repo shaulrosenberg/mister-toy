@@ -1,0 +1,40 @@
+/* toyPreview.css */
+
+article {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  article h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  article h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  article p {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  article p span {
+    font-weight: bold;
+  }
+  
+  article a {
+    display: inline-block;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.875rem;
+  }
+  
+  article a:hover {
+    text-decoration: underline;
+  }
+  

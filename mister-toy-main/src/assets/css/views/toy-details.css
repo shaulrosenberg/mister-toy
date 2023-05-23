@@ -1,0 +1,31 @@
+
+.toy-details {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.toy-details h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.toy-details h5 {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.toy-details p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.toy-details .button-group {
+    margin-top: 1rem;
+}
+
+.toy-details .button-group>* {
+    margin-right: 0.5rem;
+}

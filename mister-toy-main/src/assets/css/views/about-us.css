@@ -1,0 +1,33 @@
+.about-us {}
+
+.about-us h2 {
+    margin-block: 1rem;
+}
+
+.branch-btns {
+    display: flex;
+    margin-block: 1rem;
+}
+
+.branch-btns button {
+    border: none;
+    outline: none;
+    background: none;
+    margin-inline-start: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: #9cc0f9;
+    font-weight: 600;
+    border-color: white;
+}
+
+.branch-btns button:first-of-type {
+    margin-inline-start: 0;
+}
+
+.branch-btns button:active
+ {
+    outline: none;
+    box-shadow: none;
+    background-color: #5c80b9;
+}

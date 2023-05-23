@@ -1,0 +1,27 @@
+
+.toy-index {
+    padding: 1rem;
+}
+
+.toy-index main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toy-index a {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.toy-index .loading-message {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+

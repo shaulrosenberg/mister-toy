@@ -1,0 +1,33 @@
+
+.toy-filter {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.toy-filter h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.toy-filter form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.toy-filter label {
+    font-size: 1rem;
+    min-width: 100px;
+}
+
+.toy-filter input {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.toy-filter button {
+    display: none;
+}
