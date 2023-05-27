@@ -1,0 +1,24 @@
+/* Setup */
+@import './setup/variables';
+@import './setup/typography';
+@import './setup/mixins';
+/* @import './setup/fonts.css'; */
+
+/* Basics */
+@import './basics/base';
+@import './basics/helpers';
+@import './basics/layout';
+
+/* Views */
+@import './views/toy-details';
+@import './views/toy-index';
+@import './views/toy-edit';
+@import './views/home-page';
+@import './views/about-us';
+
+/* Cmps */
+@import './cmps/app-header';
+@import './cmps/app-footer';
+@import './cmps/toy-list';
+@import './cmps/toy-preview';
+@import './cmps/toy-filter';

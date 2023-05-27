@@ -20,6 +20,7 @@ export const toyService = {
 
 // TODO: add sortBy as 2nd parameter for query and support sorting
 function query(filterBy = {}) {
+    // TODO : add query params to address
     return httpService.get(BASE_URL, filterBy)
     // return storageService.query(STORAGE_KEY).then(toys => toys)
 }
@@ -48,7 +49,7 @@ function getEmptyToy() {
 }
 
 function getDefaultFilter() {
-    return { txt: '', maxPrice: '', status: '', labels: [] }
+    return { txt: '', maxPrice: '', labels: [], sortBy: '', sortOrder: '' }
 }
 
 function _createToys() {

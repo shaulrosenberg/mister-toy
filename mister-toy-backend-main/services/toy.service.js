@@ -4,7 +4,7 @@ var toys = require('../data/toy.json')
 function query(filterBy = {}) {
     let toysToDisplay = toys
 
-    const { txt, labels, status, maxPrice } = filterBy
+    const { txt, labels, sortBy, maxPrice, sortOrder } = filterBy
 
     console.log(filterBy)
 
@@ -15,14 +15,33 @@ function query(filterBy = {}) {
 
     if (labels && labels.length) {
         // filter by labels
-    }
-
-    if (status !== undefined) {
-        // filter by status (sold out / in stock)
+        toysToDisplay = toysToDisplay.filter(toy => labels.some(label => toy.labels.includes(label)))
     }
 
     if (maxPrice !== undefined && maxPrice !== '') {
         toysToDisplay = toysToDisplay.filter(toy => toy.price <= maxPrice)
+    }
+
+    if (sortBy === 'alphabetical') {
+        toysToDisplay.sort((a, b) => {
+            const comparison = a.name.localeCompare(b.name);
+            return sortOrder === 'asc' ? comparison : -comparison
+        });
+    } else if (sortBy === 'date') {
+        toysToDisplay.sort((a, b) => {
+            const comparison = a.createdAt - b.createdAt;
+            return sortOrder === 'asc' ? comparison : -comparison
+        });
+    } else if (sortBy === 'inStock') {
+        toysToDisplay.sort((a, b) => {
+            if (a.inStock && !b.inStock) {
+                return sortOrder === 'asc' ? -1 : 1
+            } else if (!a.inStock && b.inStock) {
+                return sortOrder === 'asc' ? 1 : -1
+            } else {
+                return 0
+            }
+        })
     }
 
     return Promise.resolve(toysToDisplay)

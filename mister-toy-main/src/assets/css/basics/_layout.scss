@@ -1,0 +1,35 @@
+/* main.css */
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+
+    &.app {
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+    }
+
+    >* {
+        grid-column: 1;
+    }
+
+    >*.full {
+        grid-column: 1/-1;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .main-layout {
+        grid-template-columns: 1fr 1200px 1fr;
+
+
+        >*:not(.full) {
+            grid-column: 2;
+        }
+    }
+
+
+
+}
